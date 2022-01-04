@@ -5,7 +5,7 @@ class ArticlesController < ApplicationController
   end
 
   def new
-
+    @article = Article.new
   end
 
   def show
@@ -20,7 +20,7 @@ class ArticlesController < ApplicationController
     else 
       render "new"
     end
-    
+
   end
 
   private
